@@ -10,6 +10,3 @@ const formattedDate = lastModifiedDate.toLocaleDateString() + ' ' + lastModified
 const lastModifiedText = document.getElementById("lastModified");
 lastModifiedText.textContent = "Last Modified:" + formattedDate;
 
-console.log(showCurrentlyYear);
-console.log(lastModifiedText);
-console.log(lastModifiedText);
