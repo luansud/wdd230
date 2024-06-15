@@ -1,0 +1,21 @@
+@media only screen and (min-width: 45rem){
+    
+    nav ul{
+        display: flex;
+        justify-content:center;
+    }
+    nav li{
+        padding: 0px 20px;
+    }
+    
+    
+    .cards{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    .card{
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    }
+}
