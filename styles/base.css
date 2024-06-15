@@ -109,6 +109,6 @@ footer{
     background-color: var(--box-color);
 }
 
-footer p{
+footer span{
     margin-bottom: 7.5px;
 }

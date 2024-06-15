@@ -8,5 +8,5 @@ const lastModifiedDate = new Date(lastModifiedString);
 const formattedDate = lastModifiedDate.toLocaleDateString() + ' ' + lastModifiedDate.toLocaleTimeString();
 
 const lastModifiedText = document.getElementById("lastModified");
-lastModifiedText.textContent = "Last Modified:" + formattedDate;
+lastModifiedText.textContent = " Last Modified:" + formattedDate;
 
