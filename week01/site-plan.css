@@ -1,0 +1,119 @@
+:root {
+
+  --primary-color: #002366 ;
+  --secondary-color: #DAA520 ;
+  --accent1-color: #67B7D1;
+  --accent2-color: #FFFFFF;
+
+  --heading-font: "Roboto Condensed";
+  --paragraph-font: "Roboto Condensed", sans-serif, Carlito;
+
+  --headline-color-on-white: #DAA520;  /* headlines on a white background */ 
+  --headline-color-on-color: #002366; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #002366; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #DAA520; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #E0E0E0  ;
+  --nav-link-color: #fefeff;
+  --nav-background-color: #002366;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #DAA520;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  color: #E0E0E0;
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
