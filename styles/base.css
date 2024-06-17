@@ -88,8 +88,11 @@ main h1{
 }
 
 .card a{
-    text-decoration: none;
-    color: rgb(58, 61, 240);
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease-in-out;
+}
+.card a:hover{
+    color: rgb(9, 185, 244);
 }
 
 .card ul li{
