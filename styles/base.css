@@ -89,7 +89,6 @@ main h1{
 
 .card a{
     color: rgb(255, 255, 255);
-    transition: color 0.5s ease-in-out;
 }
 .card a:hover{
     color: rgb(9, 185, 244);
