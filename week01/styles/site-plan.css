@@ -63,6 +63,12 @@ ul{
   list-style-type: none;
 }
 
+.answers{
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
 .colors {
   width: 100%;
   min-width: 350px;
