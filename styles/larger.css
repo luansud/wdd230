@@ -1,11 +1,16 @@
-@media only screen and (min-width: 45rem){
+@media only screen and (min-width: 40rem){
     
-    nav ul{
+    ul.menuNav, ul.menuNav.open{
         display: flex;
         justify-content:center;
     }
+
     nav li{
         padding: 0px 20px;
+    }
+
+    #hamburguerButton{
+        display: none;
     }
     
     
