@@ -72,7 +72,7 @@ nav div{
 
 #hamburguerButton{
     background:none;
-    color: var(--whiteColor);
+    color: white;
     border: none;
     cursor: pointer;
     width: 3rem;
