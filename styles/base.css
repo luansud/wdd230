@@ -2,6 +2,10 @@
     --box-color: rgb(3,44,113);
     --whiteColor: white;
 }
+:root.open{
+    --box-color: rgb(3,44,113);
+    --whiteColor: black;
+}
 
 *{
     margin: 0;
@@ -11,7 +15,7 @@
 
 body{
     background-color: rgb(0, 1, 29);
-    color: var(--whiteColor);
+    color: white;
     font-family: "Roboto", sans-serif;
 }
 
@@ -39,7 +43,7 @@ header{
 }
 
 header span{
-    color: var(--whiteColor);
+    color: var(white);
     font-size: 40px;
 }
 
@@ -95,7 +99,7 @@ nav a{
     display: block;
     text-decoration: none;
     text-align: center;
-    color: var(--whiteColor);
+    color: white;
     list-style-type: none;
     padding: .9rem;
 }
@@ -115,8 +119,6 @@ ul.menuNav{
 ul.menuNav.open{
     display: block;
 }
-
-
 
 
 main h1{
@@ -149,10 +151,6 @@ main h1{
 
 .card a{
     color: var(--whiteColor);
-}
-
-.card ul.open{
-    color: black;
 }
 
 .card a:hover{

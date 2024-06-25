@@ -8,12 +8,9 @@ hamburgerElement.addEventListener("click", () =>{
 
 const darkButton = document.querySelector("#darkButton");
 const bodyAll = document.querySelector("body");
-const aColor = document.querySelectorAll(".card a");
+const root = document.documentElement;
 
 darkButton.addEventListener("click", () =>{
     bodyAll.classList.toggle("open");
-    aColor.classList.toggle("open");
-    aColor.forEach(a =>{
-        a.classList.toggle("open");
-    });
+    root.classList.toggle('open');
 });
