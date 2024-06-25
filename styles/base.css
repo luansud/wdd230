@@ -1,5 +1,6 @@
 :root{
     --box-color: rgb(3,44,113);
+    --whiteColor: white;
 }
 
 *{
@@ -10,8 +11,21 @@
 
 body{
     background-color: rgb(0, 1, 29);
-    color: white;
+    color: var(--whiteColor);
     font-family: "Roboto", sans-serif;
+}
+
+body.open{
+    background-color: white;
+    color: black;
+}
+
+body h2{
+    color: white;
+}
+
+body span{
+    color: white;
 }
 
 header{
@@ -25,7 +39,7 @@ header{
 }
 
 header span{
-    color: white;
+    color: var(--whiteColor);
     font-size: 40px;
 }
 
@@ -35,10 +49,45 @@ header img{
     border-radius: 50%;
 }
 
+
+#darkButton{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+nav div{
+    display: flex;
+    justify-content: left;
+}
+
+#hamburguerButton{
+    background:none;
+    color: var(--whiteColor);
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
 nav{
     margin: 0px 20px;
-    background-color: rgba(3,44,113,0.8);
+    background-color: rgb(2, 36, 95);
 }
+
+#hamburguerButton::before{
+    content: "\2630";
+}
+
+#hamburguerButton.open::before{
+    content: "X";
+}
+
 nav ul{
     list-style-type: none;
 }
@@ -46,7 +95,7 @@ nav a{
     display: block;
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: var(--whiteColor);
     list-style-type: none;
     padding: .9rem;
 }
@@ -58,6 +107,17 @@ nav li:hover{
 .active{
     background-color: rgba(0,0,0,0.4);
 }
+
+ul.menuNav{
+    display: none;
+}
+
+ul.menuNav.open{
+    display: block;
+}
+
+
+
 
 main h1{
     margin: 25px;
@@ -88,8 +148,13 @@ main h1{
 }
 
 .card a{
-    color: rgb(255, 255, 255);
+    color: var(--whiteColor);
 }
+
+.card ul.open{
+    color: black;
+}
+
 .card a:hover{
     color: rgb(9, 185, 244);
 }
