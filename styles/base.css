@@ -54,7 +54,7 @@ header img{
 }
 
 
-#darkButton{
+.darkButton{
     position: absolute;
     top: 40px;
     right: 50px;
@@ -62,6 +62,7 @@ header img{
     background: none;
     border: none;
 }
+
 
 
 nav div{
