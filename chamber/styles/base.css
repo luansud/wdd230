@@ -1,0 +1,115 @@
+:root {
+
+    --primary-color: #002366 ;
+    --secondary-color: #DAA520 ;
+    --accent1-color: #67B7D1;
+    --accent2-color: #FFFFFF;
+  
+    --heading-font: "Roboto Condensed";
+    --paragraph-font: "Roboto Condensed", sans-serif, Carlito;
+  
+    --headline-color-on-white: #DAA520;  /* headlines on a white background */ 
+    --headline-color-on-color: #002366; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #002366; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #DAA520; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #E0E0E0  ;
+    --nav-link-color: #FFFFFF;
+    --nav-background-color: white;
+    --nav-hover-link-color: #002366;
+    --nav-hover-background-color: #DAA520;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto Condensed";
+}
+
+.headerContainer{
+    background: linear-gradient(to right, rgb(255, 255, 255), var(--primary-color));
+
+}
+
+.logoTitle{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logoTitle h2{
+    color: var(--accent2-color);
+}
+
+.logoTop{
+    width: 100px;
+    margin: 5px;
+    padding-left: 50px;
+}
+
+
+/* MENU NAV */
+nav{
+    margin: 0px;
+    display: block;
+    text-align: right;
+}
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    padding:2px 0px 0px 0px;
+
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--nav-link-color);
+    list-style-type: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 20px;
+}
+
+nav li:hover{
+    background-color: var(--nav-hover-background-color);
+}
+.active{
+    background-color: rgba(0,0,0,0.2);
+}
+ul.menuNav{
+    display: none;
+}
+ul.menuNav.open{
+    display: block;
+}
+
+
+/* MENU MOBILE */
+#hamburguerButton{
+    background:none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+#hamburguerButton::before{
+    content: "\2630";
+}
+#hamburguerButton.open::before{
+    content: "X";
+}
+
+
+
+
+/* FOOTER */
+footer{
+    margin-top: 10px;
+    padding: 15px 0;
+    background-color: var(--paragraph-color-on-white);
+    color: var(--paragraph-background-color);
+    text-align: center;
+    width: 100%;
+}

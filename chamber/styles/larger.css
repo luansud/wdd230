@@ -1,0 +1,35 @@
+@media only screen and (min-width: 52rem){
+    ul.menuNav, ul.menuNav.open{
+        display: flex;
+        justify-content:center;
+    }
+
+    nav li{
+        padding: 0px 20px;
+    }
+    nav ul{
+        padding-right: 30px;
+        height: 100%;
+        text-align: center;
+    }
+    
+
+    .headerContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+
+    .logoTitle h2{
+        color: var(--primary-color);
+    }
+
+    #hamburguerButton{
+        display: none;
+    }
+
+
+}
