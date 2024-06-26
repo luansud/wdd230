@@ -26,8 +26,7 @@ html, body {
 }
 
 .headerContainer{
-    background: linear-gradient(to right, rgb(255, 255, 255), var(--primary-color));
-
+    background: linear-gradient(to right, #67B7D1, var(--primary-color));
 }
 
 .logoTitle{
@@ -36,7 +35,7 @@ html, body {
     gap: 30px;
 }
 
-.logoTitle h2{
+.logoTitle h1{
     color: var(--accent2-color);
 }
 
@@ -45,7 +44,6 @@ html, body {
     margin: 5px;
     padding-left: 50px;
 }
-
 
 /* MENU NAV */
 nav{
@@ -59,7 +57,6 @@ nav ul{
     padding:2px 0px 0px 0px;
 
 }
-
 nav a{
     display: block;
     text-decoration: none;
@@ -83,7 +80,6 @@ ul.menuNav.open{
     display: block;
 }
 
-
 /* MENU MOBILE */
 #hamburguerButton{
     background:none;
@@ -100,6 +96,13 @@ ul.menuNav.open{
 #hamburguerButton.open::before{
     content: "X";
 }
+
+.heroImage img{
+    width: 100%;
+}
+
+
+
 
 
 
