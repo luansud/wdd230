@@ -103,7 +103,7 @@ ul.menuNav.open{
 .heroImage{
     position: relative;
     height: 100vh;
-    background: url("/chamber/images/heroImage.jpg");
+    background: url("../images/heroImage.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -175,7 +175,7 @@ ul.menuNav.open{
 .blockEvent{
     margin: 10px;
     padding: 30px 20px;
-    background: url("/chamber/images/natal_iluminado.jpeg");
+    background: url("../images/natal_iluminado.jpeg");
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.);
