@@ -156,7 +156,7 @@ ul.menuNav.open{
     text-align: center;
     align-items: center;
     margin: 30px;
-    background-color: var(--headline-color-on-white);
+    background-color: var(--paragraph-color-on-white);
     padding: 10px;
     color: var(--accent2-color);
     border-radius: 10px;
@@ -204,13 +204,13 @@ ul.menuNav.open{
 /* WEATHER */ 
 
 .weather-box {
-    background: var(--accent1-color);
+    background: var(--secondary-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px 100px;
     text-align: center;
     margin: 10px;
-    color: var(--accent2-color);
+    color: black;
 }
 .weather-box h2 {
     font-size: 2em;
@@ -238,7 +238,7 @@ ul.menuNav.open{
 
 
 .spotlight-box {
-    background: var(--headline-color-on-white);
+    background: var(--primary-color);
     color: var(--accent2-color);
     margin: 20px;
     border-radius: 15px;
