@@ -179,6 +179,7 @@ ul.menuNav.open{
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: var(--accent2-color);
     border-radius: 20px;
 }
@@ -196,6 +197,84 @@ ul.menuNav.open{
     color: var(--headline-color-on-color);
     transition: background-color 0.5s, color 0.5s;
 }
+
+.sectionWeatherMembers{
+    display: block;
+}
+
+/* WEATHER */ 
+
+.weather-box {
+    background: var(--accent1-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 100px;
+    text-align: center;
+    margin: 10px;
+    color: var(--accent2-color);
+}
+.weather-box h2 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+.weather-box p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.weather-icon {
+    font-size: 3em;
+}
+.humidity, .windchill {
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* SPOTLIGHTS*/ 
+
+.memberSpotlights{
+    display: block;
+}
+
+
+.spotlight-box {
+    background: var(--headline-color-on-white);
+    color: var(--accent2-color);
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+.spotlight-box h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+.spotlight-box p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-style: italic;
+}
+.contact-info {
+    margin-top: 20px;
+    font-size: 1em;
+}
+.contact-info div {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
@@ -217,3 +296,6 @@ footer{
     height: 110px;
     padding-right: 10px;
 }
+
+
+

@@ -44,6 +44,19 @@
         justify-content: space-evenly;
     }
 
+
+    .sectionWeatherMembers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .memberSpotlights{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .boxFooter{
         display: flex;
         justify-content: center;
