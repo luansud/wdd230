@@ -178,7 +178,6 @@ ul.menuNav.open{
     background: url("../images/natal_iluminado.jpeg");
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: var(--accent2-color);
     border-radius: 20px;
