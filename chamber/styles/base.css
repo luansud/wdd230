@@ -26,7 +26,7 @@ html, body {
 }
 
 .headerContainer{
-    background: linear-gradient(to right, #67B7D1, var(--primary-color));
+    background: linear-gradient(to right, #0F5E9E, var(--primary-color));
 }
 
 .logoTitle{
