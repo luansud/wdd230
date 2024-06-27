@@ -17,6 +17,12 @@
         height: 100%;
     }
 
+    .boxHero{
+        min-height: 30%;
+        min-width: 40%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
     ul.menuNav{
         margin: 0;
         padding: 0;      
@@ -33,5 +39,16 @@
         display: none;
     }
 
+    .events{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .boxFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
 
 }
