@@ -61,6 +61,11 @@ header img{
     cursor: pointer;
     background: none;
     border: none;
+    color: white;
+}
+
+.darkButton.open{
+    color: white;
 }
 
 
