@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profileLuã.jpg" alt="Profile Picture">
+        <img src="images/profileLuã.webp" alt="Profile Picture">
         <span>Luã Felizola</span>
         <button class="darkButton">☀️</button>
     </header>
@@ -31,12 +31,21 @@
         <div><button id="hamburguerButton"></button></div>
         <ul class="menuNav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="">Site Plan</a></li>
             <li><a href="">Form</a></li>
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/porto-alegre-brazil-temple-mobile.webp" media="(max-width: 500px)">
+                <source srcset="images/porto-alegre-brazil-temple-medium.webp" media="(max-width: 750px)">
+                <img src="images/porto-alegre-brazil-temple-desktop.webp" alt="Porto Alegre Temple">
+            </picture>
+            <span>Porto Alegre Temple</span>
+        </div>
+
 
         <h1>WDD 230 - Web Frontend Development</h1>
         
@@ -58,8 +67,12 @@
                 <h2>Information</h2>
                 <p>Aracaju, Brazil</p>
                 <p>20°C - Cloudy</p>
-                <p>Page Visits: </p>
+                <p>Page Visits: <span id="visits"></span></p>
             </section>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15670.865303299355!2d-37.03157173293378!3d-10.909150079456216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab4a399d877d3%3A0x5dfc076195855a3d!2sBarra%20dos%20Coqueiros%2C%20SE%2C%2049140-003!5e0!3m2!1spt-BR!2sbr!4v1719617233984!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </main>
@@ -70,6 +83,6 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
