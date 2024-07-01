@@ -126,6 +126,10 @@ ul.menuNav.open{
     display: block;
 }
 
+main{
+    margin: 0px 10%;
+}
+
 .hero{
     padding: 0px 20px 0px 20px;
     width: 100%;
