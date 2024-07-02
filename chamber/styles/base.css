@@ -266,14 +266,39 @@ ul.menuNav.open{
 
 /* DISCOVER PAGE */
 
+.discoverPage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.discoverPage img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 
 
 
+.pictureGallery{
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    position: relative;
+    display: block;
+}
 
-
-
+.pictureGallery span{
+    position: absolute;
+    top: 4vw;
+    left: 5vw;
+    background-color: white;
+    padding: 1vw 1vw;
+    font-size: 3vw;
+    color: #10678c;
+    opacity: 0.9;
+}
 
 
 
