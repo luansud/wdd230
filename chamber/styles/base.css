@@ -278,6 +278,24 @@ ul.menuNav.open{
     height: auto;
 }
 
+.boxSideBar{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.boxSideBar table{
+    display: flex;
+    justify-content: center;
+}
+.boxSideBar table th,td{
+    padding: 0px 20px;
+}
+.boxSideBar table th{
+    padding: 10px 20px;
+}
 
 
 
@@ -291,8 +309,8 @@ ul.menuNav.open{
 
 .pictureGallery span{
     position: absolute;
-    top: 4vw;
-    left: 5vw;
+    bottom: 2vw;
+    left: 0;
     background-color: white;
     padding: 1vw 1vw;
     font-size: 3vw;
