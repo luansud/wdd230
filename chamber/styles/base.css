@@ -25,6 +25,7 @@ html, body {
     font-family: "Roboto Condensed";
 }
 
+
 .headerContainer{
     background-color: var(--primary-color);
 }
@@ -283,8 +284,13 @@ ul.menuNav.open{
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
+.boxSideBar a{
+    color: var(--accent2-color);
+}
 
 .boxSideBar table{
     display: flex;
@@ -296,9 +302,6 @@ ul.menuNav.open{
 .boxSideBar table th{
     padding: 10px 20px;
 }
-
-
-
 
 .pictureGallery{
     padding: 10px 0px 0px 0px;
@@ -317,6 +320,7 @@ ul.menuNav.open{
     color: #10678c;
     opacity: 0.9;
 }
+
 
 
 
