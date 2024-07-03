@@ -295,8 +295,10 @@ ul.menuNav.open{
     display: flex;
     justify-content: center;
 }
-.boxSideBar table th,td{
+table th,td{
     padding: 0px 20px;
+    white-space: nowrap;
+    text-align: left;
 }
 .boxSideBar table th{
     padding: 10px 20px;
