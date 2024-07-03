@@ -1,4 +1,9 @@
 @media only screen and (min-width: 63rem){
+    main{
+        margin: 0px 10%;
+    }
+    
+    
     ul.menuNav, ul.menuNav.open{
         display: flex;
         justify-content:center;
@@ -64,6 +69,19 @@
     .discoverPage{
         grid-template-columns: 1fr 2fr;
     }
+
+    .pictureGallery {
+        transition: filter 0.3s ease, opacity 0.3s ease; 
+    }
+
+    .pictureGallery img{
+        width: 100%;   
+    }
+  
+    .pictureGallery:hover {
+        filter:brightness(1.3);
+    }
+
 
 
     .boxFooter{
