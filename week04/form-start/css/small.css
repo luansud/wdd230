@@ -1,0 +1,132 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {border-bottom: solid 1px #333;}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*----------- FORM STYLING --------------*/
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend{
+    color: rgb(31, 31, 165);
+    padding: 0 .5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: rgb(146, 13, 13);
+    font-size: .9rem;
+}
+
+.wf1 div{
+    color: rgb(31, 31, 165);
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 input[type="number"],
+.wf1 select
+{
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"]{
+    border: none;
+    background-image: radial-gradient(rgb(120, 247, 240),rgb(0, 140, 255));
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: .8rem;
+    margin: .2rem 4% 2rem 5%;
+    font-weight: bold;
+    color: #04003d;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.wf1 input[type="submit"]:hover{
+    opacity: 0.7;
+}
+
+.wf1 input:required{
+    border-right: 10px solid red;
+}
+.wf1 input:required:valid{
+    border-right: 10px solid green;
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
