@@ -1,0 +1,31 @@
+:root{
+    --header:#65c0fc;
+    --letter:white;
+    --border:#1c9efb;
+}
+
+caption{
+    caption-side: bottom;
+    font-style: italic;
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
+table{
+    margin: 10px auto;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+th{
+    background-color: var(--header);
+    padding: 5px;
+}
+
+
+tr:nth-child(odd){
+    background-color: white;
+}
+tr:nth-child(even){
+    background-color: rgb(230, 241, 253);
+}
+
