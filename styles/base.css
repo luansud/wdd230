@@ -130,6 +130,10 @@ main{
     margin: 0px 10%;
 }
 
+div span{
+    color: var(--whiteColor);
+}
+
 .hero{
     padding: 0px 20px 0px 20px;
     width: 100%;
@@ -158,6 +162,9 @@ main h1{
     text-align: center;
 }
 
+#pageRating{
+    color: var(--whiteColor);
+}
 
 .cards{
     margin: 1rem 2vw;
@@ -207,6 +214,7 @@ main h1{
     width: 60vw;
     height: 40vw;
 }
+
 
 footer{
     text-align: center;
