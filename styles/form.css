@@ -1,9 +1,8 @@
 :root{
     --text:white;
     --button-background:rgb(2, 36, 95);
-    --border-color:blue;
-    --shadow-blue:blue;
-    --shadow-black:blue;
+    --error-color: rgb(255, 110, 110);
+
 }
 
 
@@ -69,5 +68,5 @@
 
 #errorPassword{
     margin-bottom: 5px;
-    color: rgb(255, 110, 110);
+    color: var(--error-color);
 }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Barra Chamber of Commerce</title>
+
+    <meta name="description" content="Join Page for registration on Barra Chamber of Commerce \nA website for you Explore the latest innovations and trends that are shaping the future of commerce in 'Barra dos Coqueiros'.">
+    <meta name="author" content="Luã Felizola Soares de Medeiros">
+    <!-- Open Graph Meta tags-->
+    <meta property="og:title" content="Barra Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://blog.laredo.com.br/wp-content/uploads/2020/10/original-c34a9222861df238bf73bb2735efb285-scaled.jpeg">
+    <meta property="og:url" content="https://blog.laredo.com.br/wp-content/uploads/2020/10/original-c34a9222861df238bf73bb2735efb285-scaled.jpeg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="logoTitle">
+                <span><img class="logoTop" src="images/brasao_prefeitura.png" alt="City Logo"></span>
+                <h1>Barra Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <div><button id="hamburguerButton"></button></div>
+                <ul class="menuNav" >
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Join Us</h1>
+    <div class="joinContainer">
+
+        <section id="memberShipSideDescription">
+            <div class="blockLevel">
+                <h3 class="textBold">Non-Profit Membership</h3>
+                <span class="textBold">Price:</span><span>Free</span>
+                <p class="textBold">Benefits</p> 
+                <p>Access to general chamber of commerce events</p>
+            </div>
+
+            <div class="blockLevel">
+                <h3 class="textBold">Bronze Membership</h3>
+                <span class="textBold">Price:</span><span>$100/m</span>
+                <p class="textBold">Benefits</p> 
+                <p>Access to exclusive networking events</p>
+                <p>Discounts and promotion on the chamber's networks</p>
+            </div>
+
+            <div class="blockLevel">
+                <h3 class="textBold">Silver Membership</h3>
+                <span class="textBold">Price:</span><span>$500/m</span>
+                <p class="textBold">Benefits</p> 
+                <p>Priority access to advertising opportunities</p>
+                <p>Free business consultancy once a quarter</p>
+                <p>Access to special events for Silver and Gold members.</p>
+            </div>
+
+            <div class="blockLevel">
+                <h3 class="textBold">Gold Membership</h3>
+                <span class="textBold">Price:</span><span>$1500/m</span>
+                <p class="textBold">Benefits</p> 
+                <p>VIP access to all chamber events</p>
+                <p>Participation in exclusive events for business leaders</p>
+                <p>Monthly business consultancy sessions</p>
+                <p>Personalized advertising campaign once a semester</p>
+                <p>Access to a dedicated account manager for support and guidance</p>
+            </div>
+
+        </section>
+
+
+
+        
+
+        <form action="thankyou.html" method="get" class="fJoin">
+            <fieldset>
+                <legend>Registration</legend>
+                <label>First Name *<input type="text" name="fname" id="fname" placeholder="First Name" required></label>
+                <label>Last Name *<input type="text" name="lname" id="lname" placeholder="Last Name" required></label>
+                <label>Title<input type="text" name="title" id="title" pattern="[a-zA-Z\s-]{7,}"></label>
+                <label>Email Address *<input type="email" name="email" id="email" placeholder="yourname@yourdomain.com" required></label>
+                <label>Mobile Phone Number *<input type="tel" name="phone" id="phone" required></label>
+                <label>Business/Organization's Name *<input type="text" name="business" id="business" required></label>
+                <fieldset id="memberShipField">
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" name="levelMembership" value="NP Membership">NP Membership</label>
+                    <label><input type="radio" name="levelMembership" value="Bronze Membership">Bronze Membership</label>
+                    <label><input type="radio" name="levelMembership" value="Silver Membership">Silver Membership</label>
+                    <label><input type="radio" name="levelMembership" value="Gold Membership">Gold Membership</label>
+                </fieldset>
+                <label>Business/Organization's Description<textarea rows="5" cols="40" name="descriptionB" id="descriptionB"></textarea></label>
+                <input type="hidden" id="timestamp" name="timestamp">
+
+            </fieldset>
+
+            <input id="joinUsButton" type="submit" value="Join Us">
+        </form>
+
+    </div>
+    </main>
+
+
+
+    <footer>
+        <div class="boxFooter">
+            <div class="topFooter">
+                <img src="images/brasao_prefeitura.png" alt="Logo">
+                <div class="topFooterTitle">
+                    <h3>Barra Chamber of Commerce</h3>
+                    <h5>Avenida Moises Gomes Pereira, 16 - Centro <br>CEP 49.140-000 - Barra dos Coqueiros/SE</h5>
+                </div>
+            </div>
+            <div>
+                <span>ouvidoria@barradoscoqueiros.se.gov.br</span><br>
+                <span>(79) 3025-8104</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <span id="year"></span>
+        <span> |  Luã Felizola - Brazil  | </span>
+        <span id="lastModified">Last Modification</span>
+
+
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
