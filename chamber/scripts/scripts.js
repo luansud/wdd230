@@ -41,3 +41,12 @@ if (!lastVisit) {
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 localStorage.setItem('lastVisit', currentDate);
+
+//Time Stamp
+function setTimestamp() {
+  var now = new Date();
+  var formattedDateTime = now.toISOString(); 
+  document.getElementById('timestamp').value = formattedDateTime;
+}
+
+window.onload = setTimestamp;
