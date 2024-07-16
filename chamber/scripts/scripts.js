@@ -20,27 +20,30 @@ function daysBetweenDates(date1, date2) {
     return Math.floor(diffInTime / oneDay);
 }
 
-if (!lastVisit) {
-    timeVisitsDisplay.innerText = "Welcome! Let us know if you have any questions.";
-  } else {
-    const lastVisitDate = new Date(lastVisit);
-    const daysBetweenVisits = daysBetweenDates(lastVisitDate, currentDate);
-
-    if (daysBetweenVisits < 1) {
-      timeVisitsDisplay.innerText = "Back so soon! Awesome!";
-    } else if (daysBetweenVisits === 1) {
-      timeVisitsDisplay.innerText = "You last visited 1 day ago.";
+if(visitsDisplay){
+    if (!lastVisit) {
+      timeVisitsDisplay.innerText = "Welcome! Let us know if you have any questions.";
     } else {
-      timeVisitsDisplay.innerText = `You last visited ${daysBetweenVisits} days ago.`;
-    }
-  }
+      const lastVisitDate = new Date(lastVisit);
+      const daysBetweenVisits = daysBetweenDates(lastVisitDate, currentDate);
 
-  if(numVisits !== 0){
-    visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
-  }
-numVisits++;
-localStorage.setItem("numVisits-ls", numVisits);
-localStorage.setItem('lastVisit', currentDate);
+      if (daysBetweenVisits < 1) {
+        timeVisitsDisplay.innerText = "Back so soon! Awesome!";
+      } else if (daysBetweenVisits === 1) {
+        timeVisitsDisplay.innerText = "You last visited 1 day ago.";
+      } else {
+        timeVisitsDisplay.innerText = `You last visited ${daysBetweenVisits} days ago.`;
+      }
+    }
+
+    if(numVisits !== 0){
+      visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
+    }
+  numVisits++;
+  localStorage.setItem("numVisits-ls", numVisits);
+  localStorage.setItem('lastVisit', currentDate);
+}
+
 
 //Time Stamp
 function setTimestamp() {
@@ -50,3 +53,18 @@ function setTimestamp() {
 }
 
 window.onload = setTimestamp;
+
+// Teste
+document.addEventListener("DOMContentLoaded", function() {
+  const inputs = document.querySelectorAll('.fJoin input:required');
+
+  inputs.forEach(input => {
+      input.addEventListener('input', function() {
+          if (this.value.trim() !== "") {
+              this.style.borderLeftColor = "var(--primary-color)";
+          } else {
+              this.style.borderLeftColor = "var(--secondary-color)";
+          }
+      });
+  });
+});
