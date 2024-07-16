@@ -385,6 +385,10 @@ table th,td{
     border-radius: 10px;
 }
 
+.fJoin input:required{
+    border-left: 10px solid var(--secondary-color);
+}
+
 .fJoin input{
     margin: 0px 8px 0px 0px;
     border: 1px solid var(--primary-color);
