@@ -65,6 +65,7 @@ function matchingPasswords(){
         userPassword.value = "";
         confirmPassword.value = "";
         userPassword.focus();
+        
     } else {
         errorPassword.textContent = "";
     }
