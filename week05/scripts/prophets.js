@@ -9,7 +9,6 @@ async function getProphetData(url){
 };
 
 
-
 // Defining the display function
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {

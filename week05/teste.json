@@ -1,0 +1,46 @@
+{
+    "coord": {
+      "lon": 6.64,
+      "lat": 49.74
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 73.24,
+      "feels_like": 74.97,
+      "temp_min": 71.11,
+      "temp_max": 75.83,
+      "pressure": 1021,
+      "humidity": 100,
+      "sea_level": 1021,
+      "grnd_level": 987
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.46,
+      "deg": 15,
+      "gust": 2.86
+    },
+    "clouds": {
+      "all": 66
+    },
+    "dt": 1721240730,
+    "sys": {
+      "type": 2,
+      "id": 2091389,
+      "country": "DE",
+      "sunrise": 1721187875,
+      "sunset": 1721244854
+    },
+    "timezone": 7200,
+    "id": 6554291,
+    "name": "Trier",
+    "cod": 200
+  }
