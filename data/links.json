@@ -1,0 +1,105 @@
+{
+    "weeks":[
+        {
+            "week":"Week 1",
+            "links":[
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"Layout"
+                },
+                {
+                    "url":"https://codepen.io/luansud/pen/KKLZObV",
+                    "title":"JavaScript Review"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"Media Query(Responsive Site)"
+                },
+                {
+                    "url":"week01/chamber-site-plan.html",
+                    "title":"Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "week":"Week 2",
+            "links":[
+                {
+                    "url":"week02/design.html",
+                    "title":"Web Design Principles"
+                },
+                {
+                    "url":"https://codepen.io/luansud/pen/LYoQvrj",
+                    "title":"Responsive Hamburguer Menu"
+                },
+                {
+                    "url":"week02/bom.html",
+                    "title":"Top10 Chapters(DOM)"
+                },
+                {
+                    "url":"chamber/index.html",
+                    "title":"Chamber Home Page"
+                }
+            ]
+        },
+        {
+            "week":"Week 2",
+            "links":[
+                {
+                    "url":"week03/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"week03/lazyload.html",
+                    "title":"Lazy Load"
+                },
+                {
+                    "url":"week03/responsive-images.html",
+                    "title":"Responsive Images"
+                },
+                {
+                    "url":"week03/bom.html",
+                    "title":"BOM LocalStorage"
+                }
+            ]
+        },
+        {
+            "week":"Week 4",
+            "links":[
+                {
+                    "url":"https://codepen.io/luansud/pen/BagBaJE",
+                    "title":"Pseudo-Classes"
+                },
+                {
+                    "url":"week04/images/Screenshot.jpg",
+                    "title":"Combinators"
+                },
+                {
+                    "url":"week04/form-start/index.html",
+                    "title":"Forms"
+                }
+            ]
+        },
+        {
+            "week":"Week 5",
+            "links":[
+                {
+                    "url":"https://codepen.io/luansud/pen/gONaBWy",
+                    "title":"Pseudo-Elements"
+                },
+                {
+                    "url":"week05/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"Prophets Fetch API"
+                },
+                {
+                    "url":"week05/weather.html",
+                    "title":"API weather"
+                }
+            ]
+        }
+    ]
+}

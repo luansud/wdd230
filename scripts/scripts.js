@@ -48,10 +48,8 @@ if(rangeValue){
 
 function showRange(){
     rangeValue.innerHTML = range.value;
-    console.log("teste Range");
     
 }
-console.log("teste");
 
 // checking if Passwords Match
 const userPassword = document.getElementById("password");
@@ -88,8 +86,6 @@ async function getWeather(){
     const response = await fetch(url)
     const data = await response.json()
     displayWeather(data)
-    console.table(data)
-    console.log(data);
 }
 
 function displayWeather(data){
