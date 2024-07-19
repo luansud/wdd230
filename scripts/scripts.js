@@ -91,8 +91,10 @@ async function getWeather(){
 function displayWeather(data){
     weatherTemp.textContent = `${Math.round(data.main.temp)}ºC`
     const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-    weatherIcon.setAttribute("src",weatherIconSrc)
-    weatherIcon.setAttribute("alt","Weather Icon")  
+    const imgIcon = document.createElement('img')
+    imgIcon.setAttribute("src",weatherIconSrc)
+    imgIcon.setAttribute("alt","Weather Icon")  
+    weatherIcon.appendChild(imgIcon)
     weatherDesc.textContent = data.weather[0].main
 }
 
