@@ -204,6 +204,10 @@ main h1{
     text-align: center;
     padding: 10px 5px;
 }
+#weatherBox{
+    text-align: center;
+    margin: 10px;
+}
 
 .map{
     width: 100%;

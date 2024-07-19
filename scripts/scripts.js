@@ -41,8 +41,10 @@ if(visitsDisplay){
 const rangeValue = document.getElementById("rangeValue");
 const range = document.getElementById("pageRating");
 
-range.addEventListener('change',showRange);
-range.addEventListener("input",showRange);
+if(rangeValue){
+    range.addEventListener('change',showRange);
+    range.addEventListener("input",showRange);
+}
 
 function showRange(){
     rangeValue.innerHTML = range.value;
@@ -52,12 +54,14 @@ function showRange(){
 console.log("teste");
 
 // checking if Passwords Match
-
 const userPassword = document.getElementById("password");
 const confirmPassword = document.getElementById("cPassword");
 const errorPassword = document.getElementById("errorPassword");
 
-confirmPassword.addEventListener("focusout", matchingPasswords);
+if(userPassword){
+    confirmPassword.addEventListener("focusout", matchingPasswords);
+}
+
 
 function matchingPasswords(){
     if(userPassword.value != confirmPassword.value){
@@ -71,3 +75,30 @@ function matchingPasswords(){
     }
 }
 
+// Weaether Control
+const key = "932fce6cea8cb7e687cd724a73adbc12";
+const lat = "-10.90";
+const long = "-37.02";
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${key}`
+
+const weatherIcon = document.getElementById("weatherIcon");
+const weatherTemp = document.getElementById("weatherTemp");
+const weatherDesc = document.getElementById("weatherDesc");
+
+async function getWeather(){
+    const response = await fetch(url)
+    const data = await response.json()
+    displayWeather(data)
+    console.table(data)
+    console.log(data);
+}
+
+function displayWeather(data){
+    weatherTemp.textContent = `${Math.round(data.main.temp)}ºC`
+    const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    weatherIcon.setAttribute("src",weatherIconSrc)
+    weatherIcon.setAttribute("alt","Weather Icon")  
+    weatherDesc.textContent = data.weather[0].main
+}
+
+getWeather();
