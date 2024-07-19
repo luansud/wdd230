@@ -190,6 +190,7 @@ main h1{
 
 .card a{
     color: var(--whiteColor);
+    text-decoration: none;
 }
 
 .card a:hover{
