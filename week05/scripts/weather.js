@@ -1,4 +1,4 @@
-const key = "932fce6cea8cb7e687cd724a73adbc12";
+const key = secrets.API_KEY;
 const latLong = "49.74794010042696, 6.645149061595791";
 const lat = "49.74";
 const long = "6.64";
