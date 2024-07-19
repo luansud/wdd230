@@ -76,10 +76,9 @@ function matchingPasswords(){
 }
 
 // Weaether Control
-const key = API_KEY;
 const lat = "-10.90";
 const long = "-37.02";
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${key}`
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=932fce6cea8cb7e687cd724a73adbc12`;
 
 const weatherIcon = document.getElementById("weatherIcon");
 const weatherTemp = document.getElementById("weatherTemp");

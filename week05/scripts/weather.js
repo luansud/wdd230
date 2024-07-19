@@ -1,9 +1,8 @@
-const key = secrets.API_KEY;
 const latLong = "49.74794010042696, 6.645149061595791";
 const lat = "49.74";
 const long = "6.64";
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${key}`
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=932fce6cea8cb7e687cd724a73adbc12`;
 console.log(url);
 
 const currentTemp = document.querySelector("#current-temp");
