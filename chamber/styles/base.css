@@ -469,7 +469,9 @@ table th,td{
 }
 
 #discovery .grid img {
-	box-shadow: 0 0 10px #333;
+    border: 1px solid var(--accent2-color);
+    background-color: var(--accent2-color);
+    border-radius: 20px;
 }
 
 #discovery .grid section > * {
