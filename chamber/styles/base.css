@@ -451,7 +451,7 @@ table th,td{
 
 #discovery section {
 	padding: 0.5rem;
-	background-color: var(--secondary-color);
+	background-color: var(--accent1-color);
 }
 
 #discovery .grid {
