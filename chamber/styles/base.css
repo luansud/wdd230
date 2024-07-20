@@ -418,10 +418,10 @@ table th,td{
 }
 
 /* Directoy Page */
-h1{
+#discovery h1{
     text-align: center;
 }
-#menu{
+#discovery #menu{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,24 +429,24 @@ h1{
     height: 80px;
     gap: 10px;
 }
-#menu button{
+#discovery #menu button{
     cursor: pointer;
     font-size: 20px;
 }
 
-#menu button:hover{
+#discovery #menu button:hover{
     background-color: var(--accent1-color);
     border: none;
     transition: 0.1s ease-in;
 }
 
-#menu img{
+#discovery #menu img{
     width: 100%;
     height: 50px;
 }
 
 
-section {
+#discovery section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: var(--secondary-color);
@@ -508,16 +508,16 @@ section {
 	background-color: var(--accent2-color);
 }
 
-section h3 {
+#discovery section h3 {
 	font-size: 1.5rem;
 }
 
-section p {
+#discovery section p {
 	font-weight: 600;
 	font-size: smaller;
 }
 
-section a {
+#discovery section a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
     font-weight: bol;
@@ -525,9 +525,9 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-img {
+.grid img {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+	max-width: 100%; 
 }
 
 
