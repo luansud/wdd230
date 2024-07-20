@@ -68,3 +68,55 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+// Toggle between Grid and List
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+if(gridbutton){
+  gridbutton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+  });
+  
+  listbutton.addEventListener("click", showList); // example using defined function
+}
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+// Cards directory Creation
+
+const membersUrl = "https://luansud.github.io/wdd230/chamber/data/members.json";
+
+async function getLinks(membersUrl){
+    const response = await fetch(membersUrl)
+    if (response.ok) {
+        const data = await response.json()
+        creatingSections(data);
+    }
+}
+
+function creatingSections(data){
+    const article = document.querySelector(".grid");
+    const companies = data.companies
+    for (let c = 0; c < companies.length; c++) {
+        const company = companies[c]
+        const sectionContent = `            
+            <section>
+                <img src="${company.image}" alt="${company.name} Logo" />
+                <h3>${company.name}</h3>
+                <p>${company.phone.number}</p>
+                <p>${company.membershipLevel}</p>
+                <a href="${company.website}" target="_blank">Store Page</a>
+            </section>`
+        const section = document.createElement('section')
+        section.innerHTML = sectionContent
+        article.appendChild(section)
+    }
+}
+
+getLinks(membersUrl);

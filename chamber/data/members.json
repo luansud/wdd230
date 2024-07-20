@@ -1,0 +1,137 @@
+{
+    "companies":[
+        {
+            "name":"Hiper Carnes",
+            "address":
+                {
+                    "street":"SE-100",
+                    "ward":"Centro",
+                    "number":"1200",
+                    "postalcode":"49140-398",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"mobile",
+                "number":"+55 79 9822-2023"
+            },
+            "website":"https://www.instagram.com/hipercarnesaju/",
+            "image":"https://thumb-cdn.soluall.net/prod/adv_ads/ad300box/649b26ea-b554-48dc-b3ec-48a4ac1e09ff/64ad6255-4590-4c61-9a5e-1eb9ac1e0fec.png",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Farmácia Pague Menos",
+            "address":
+                {
+                    "street":"Rod. José de Campos",
+                    "ward":"Luar da Barra",
+                    "number":"47",
+                    "postalcode":"49140-000",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"comercial",
+                "number":"+55 79 4002-8282"
+            },
+            "website":"https://www.paguemenos.com.br/",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/5/5a/Logo_Farm%C3%A1cias_Pague_Menos.png",
+            "membershipLevel":"Silver"
+        },
+        {
+            "name":"Markos Mat de Construção e Madeireira",
+            "address":
+                {
+                    "street":"Av. Gen. Antônio",
+                    "ward":"Centro",
+                    "number":"971",
+                    "postalcode":"",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"mobile",
+                "number":"+55 79 99864-5754"
+            },
+            "website":"https://www.instagram.com/markosconstrucao/?hl=pt",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD97ory7q0ss2UGzgtdDtTJRF4PRJ1sLuxxA&s",
+            "membershipLevel":"NP"
+        },        {
+            "name":"ACADEMIA EXTREME FIT - PRAIA",
+            "address":
+                {
+                    "street":"Rod. José de Campos",
+                    "ward":"Moises Gomes",
+                    "number":"358",
+                    "postalcode":"49140-000",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"mobile",
+                "number":"+55 79 99942-8149"
+            },
+            "website":"https://www.instagram.com/academiaextremefit/",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlK6beXl0dcTVH0sXNP5UKewu4zHU4NAH61A&s",
+            "membershipLevel":"Bronze"
+        },
+        {
+            "name":"Casa das Tintas - Barra dos Coqueiros",
+            "address":
+                {
+                    "street":"3XRF+WR5",
+                    "ward":"Paraíso da Barra",
+                    "number":"",
+                    "postalcode":"49140-000",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"mobile",
+                "number":"+55 79 981039659"
+            },
+            "website":"https://www.instagram.com/casadastintas.se/",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcMjk2kntntvqftq4tkgyqiGCMUXhktJniQ&s",
+            "membershipLevel":"Silver"
+        },
+        {
+            "name":"GBarbosa",
+            "address":
+                {
+                    "street":"Av. Gen. Antônio",
+                    "ward":"Centro",
+                    "number":"1025 ",
+                    "postalcode":"49140-000",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"comercial",
+                "number":"0800 720 1111"
+            },
+            "website":"https://www.gbarbosa.com.br/",
+            "image":"https://static.todososfolhetos.com/images/shops/gbarbosa-thumbnail.png",
+            "membershipLevel":"Gold"
+        },
+        {
+            "name":"Drogasil",
+            "address":
+                {
+                    "street":"Av. Gen. Antônio",
+                    "ward":"Centro",
+                    "number":"835 ",
+                    "postalcode":"49140-000",
+                    "city":"Barra dos Coqueiros",
+                    "state":"SE"
+                },
+            "phone":{
+                "type":"mobile",
+                "number":"+55 79 99915-5038"
+            },
+            "website":"https://www.drogasil.com.br/",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/7/77/Logo_drogasil.png",
+            "membershipLevel":"Silver"
+        }
+
+    ]
+}
