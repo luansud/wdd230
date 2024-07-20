@@ -421,6 +421,9 @@ table th,td{
 #discovery h1{
     text-align: center;
 }
+#discovery article h2{
+    display: none;
+}
 #discovery #menu{
     display: flex;
     justify-content: center;
