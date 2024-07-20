@@ -106,7 +106,7 @@ function creatingSections(data){
     for (let c = 0; c < companies.length; c++) {
         const company = companies[c]
         const sectionContent = `            
-            <section>
+            <section id="companySection">
                 <img src="${company.image}" alt="${company.name} Logo" />
                 <h3>${company.name}</h3>
                 <p>${company.phone.number}</p>
