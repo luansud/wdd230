@@ -44,6 +44,14 @@
         padding: 0px 80px;
     }
 
+    .promotionalBanner h2 {
+        font-size: 6vh;
+    }
+    .promotionalBanner p {
+        font-size: 5vh;
+        font-style: italic;
+    }
+
     #hamburguerButton{
         display: none;
     }

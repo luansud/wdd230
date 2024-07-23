@@ -210,3 +210,18 @@ function displayForecastWeather(data){
 }
 
 getForecastWeather(urlForecast)
+
+// BANNER 
+const date = new Date();
+const dayIndex = date.getDay();
+const promotionalBanner = document.getElementById("promotionalBanner");
+
+if(promotionalBanner){
+    if (dayIndex == 1 || dayIndex == 2 || dayIndex == 3) {
+      promotionalBanner.className = "promotionalBanner"
+      const closeBanner = document.getElementById("closeBanner")
+      closeBanner.addEventListener("click",()=>{
+      promotionalBanner.remove();
+    });
+  }
+}
