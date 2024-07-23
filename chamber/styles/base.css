@@ -150,6 +150,7 @@ ul.menuNav.open{
     color: var(--accent2-color);
 }
 
+
 /* Mission */
 
 .mission{
@@ -207,7 +208,7 @@ ul.menuNav.open{
     background: var(--secondary-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px 100px;
+    padding: 10px;
     text-align: center;
     margin: 10px;
     color: black;
@@ -229,6 +230,38 @@ ul.menuNav.open{
     font-size: 0.9em;
     font-style: italic;
 }
+#weatherLine{
+    border: none;
+    height: 1px; 
+    background-color: black;
+    opacity: 0.2;
+    margin: 15px 20px;
+}
+
+#forecastWeatherBox{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 15px;
+    font-size: small;
+}
+
+#forecastWeatherBox img{
+    margin-bottom: -15px;
+    margin-top: -10px;
+}
+#forecastWeatherBox h2{
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+#forecastWeatherBox span{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+
+
 
 /* SPOTLIGHTS*/ 
 

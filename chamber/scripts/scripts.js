@@ -47,12 +47,15 @@ if(visitsDisplay){
 
 //Time Stamp
 function setTimestamp() {
-  var now = new Date();
-  var formattedDateTime = now.toISOString(); 
-  document.getElementById('timestamp').value = formattedDateTime;
+  const timestamp = document.getElementById('timestamp');
+  if(timestamp){
+    var now = new Date();
+    var formattedDateTime = now.toISOString(); 
+    timestamp.value = formattedDateTime;
+  }
 }
-
 window.onload = setTimestamp;
+
 
 // Teste
 document.addEventListener("DOMContentLoaded", function() {
@@ -102,21 +105,80 @@ async function getLinks(membersUrl){
 
 function creatingSections(data){
     const article = document.querySelector(".grid");
-    const companies = data.companies
-    for (let c = 0; c < companies.length; c++) {
-        const company = companies[c]
-        const sectionContent = `            
-            <section id="companySection">
-                <img src="${company.image}" alt="${company.name} Logo" />
-                <h3>${company.name}</h3>
-                <p>${company.phone.number}</p>
-                <p>${company.membershipLevel}</p>
-                <a href="${company.website}" target="_blank">Store Page</a>
-            </section>`
-        const section = document.createElement('section')
-        section.innerHTML = sectionContent
-        article.appendChild(section)
+    if(article){
+            const companies = data.companies
+      for (let c = 0; c < companies.length; c++) {
+          const company = companies[c]
+          const sectionContent = `            
+              <section id="companySection">
+                  <img src="${company.image}" alt="${company.name} Logo" />
+                  <h3>${company.name}</h3>
+                  <p>${company.phone.number}</p>
+                  <p>${company.membershipLevel}</p>
+                  <a href="${company.website}" target="_blank">Store Page</a>
+              </section>`
+          const section = document.createElement('section')
+          section.innerHTML = sectionContent
+          article.appendChild(section)
+      }
     }
+
+}
+getLinks(membersUrl);
+
+// Weather Box
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=-10.90&lon=-37.02&units=metric&appid=932fce6cea8cb7e687cd724a73adbc12`;
+
+const weatherIcon = document.getElementById("weatherIcon");
+const weatherTemp = document.getElementById("weatherTemp");
+const weatherDesc = document.getElementById("weatherDesc");
+const weatherHum = document.getElementById("weatherHumidity");
+
+async function getWeather(){
+    const response = await fetch(url)
+    const data = await response.json()
+    displayWeather(data)
+}
+function displayWeather(data){
+    weatherTemp.textContent = `${Math.round(data.main.temp)}ºC`
+    const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    const imgIcon = document.createElement('img')
+    imgIcon.setAttribute("src",weatherIconSrc)
+    imgIcon.setAttribute("alt","Weather Icon")  
+    weatherIcon.appendChild(imgIcon)
+    weatherDesc.textContent = data.weather[0].main
+    weatherHum.textContent = `Humidity: ${data.main.humidity}%`
+}
+getWeather();
+
+// Weather ForeCast
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=-10.90&lon=-37.02&units=metric&appid=932fce6cea8cb7e687cd724a73adbc12`;
+const forecastWeatherBox = document.getElementById("forecastWeatherBox");
+
+async function getForecastWeather(urlForecast){
+  const response = await fetch(urlForecast)
+  const data = await response.json()
+  displayForecastWeather(data)
 }
 
-getLinks(membersUrl);
+function displayForecastWeather(data){
+  const list = data.list
+  console.log(list[0].main.temp)
+  console.log(list[0].weather[0].main)
+  for (let i = 7; i <= 23; i += 8) {
+    const div = document.createElement('div')
+    const weatherDate = list[i].dt_txt.split(" ")[0]
+    const [year,month,day] = weatherDate.split("-")
+    const divContent = `<div>
+                            <p>${day}/${month}</p>
+                            <img src="https://openweathermap.org/img/w/${list[i].weather[0].icon}.png" alt="weather Icon">
+                            <h2>${Math.round(list[i].main.temp)}ºC</h2>
+                            <span>${list[i].weather[0].main}</span>
+                        </div>`
+    div.innerHTML = divContent
+    forecastWeatherBox.appendChild(div)
+  }
+}
+
+getForecastWeather(urlForecast)
