@@ -260,15 +260,11 @@ ul.menuNav.open{
 }
 
 
-
-
-
 /* SPOTLIGHTS*/ 
 
-.memberSpotlights{
+#memberSpotlights{
     display: block;
 }
-
 
 .spotlight-box {
     background: var(--primary-color);
@@ -276,13 +272,23 @@ ul.menuNav.open{
     margin: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
     text-align: center;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+
 }
-.spotlight-box h1 {
-    font-size: 2em;
-    margin: 10px 0;
+.spotlight-box img{
+    height: 10vh;
+    margin: 10px;
 }
+
+.spotlight-box a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
 .spotlight-box p {
     font-size: 1.2em;
     margin: 10px 0;
@@ -293,7 +299,7 @@ ul.menuNav.open{
     font-size: 1em;
 }
 .contact-info div {
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 

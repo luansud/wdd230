@@ -92,7 +92,6 @@ function showList() {
 }
 
 // Cards directory Creation
-
 const membersUrl = "https://luansud.github.io/wdd230/chamber/data/members.json";
 
 async function getLinks(membersUrl){
@@ -100,13 +99,13 @@ async function getLinks(membersUrl){
     if (response.ok) {
         const data = await response.json()
         creatingSections(data);
+        createSpotlights(data);
     }
 }
-
 function creatingSections(data){
     const article = document.querySelector(".grid");
     if(article){
-            const companies = data.companies
+      const companies = data.companies
       for (let c = 0; c < companies.length; c++) {
           const company = companies[c]
           const sectionContent = `            
@@ -122,9 +121,47 @@ function creatingSections(data){
           article.appendChild(section)
       }
     }
-
 }
 getLinks(membersUrl);
+
+//SPOTLIGHT CREATION
+function createSpotlights(data){
+  const memberSpotlights = document.getElementById("memberSpotlights");
+  if(memberSpotlights){
+    let countDiv = 0
+    const companies = data.companies
+      for (let c = 0; c < companies.length && countDiv < 3; c++){
+        console.log(countDiv)
+        const company = companies[c]
+        let membershipLevel = ""
+        membershipLevel = company.membershipLevel
+        console.log(membershipLevel)
+        if(membershipLevel == "Gold" || membershipLevel == "Silver"){
+          const div = document.createElement("div")
+          const divContent = `
+                          <img src="${company.image}" alt="${company.name}">
+                          <p>${company.name}</p>
+                          <div class="contact-info">
+                              <div>${company.phone.number}</div>
+                              <a href="${company.website}">Website</a>
+                          </div>`
+          div.className = "spotlight-box"
+          div.innerHTML = divContent
+          memberSpotlights.appendChild(div)
+          countDiv++
+          
+        }
+      }
+  }
+}
+
+
+
+
+
+
+
+
 
 // Weather Box
 
@@ -164,8 +201,7 @@ async function getForecastWeather(urlForecast){
 
 function displayForecastWeather(data){
   const list = data.list
-  console.log(list[0].main.temp)
-  console.log(list[0].weather[0].main)
+
   for (let i = 7; i <= 23; i += 8) {
     const div = document.createElement('div')
     const weatherDate = list[i].dt_txt.split(" ")[0]
