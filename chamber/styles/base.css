@@ -97,6 +97,12 @@ ul.menuNav.open{
     content: "X";
 }
 
+.pageTitle{
+    text-align: center; 
+    font-size:2rem;
+}
+
+
 /* Hero image CSS*/
 
 .heroImage{
@@ -159,15 +165,15 @@ ul.menuNav.open{
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     background-color: var(--secondary-color); 
     color: black;
     text-align: center; 
     padding: 10px 0; 
     z-index: 9999; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    font-size: 18px; 
+    font-size: 24px; 
     font-weight: bold; 
     display: flex; 
     justify-content: center; 
@@ -178,11 +184,12 @@ ul.menuNav.open{
     position: absolute;
     right: 0;
     top: 0;
-    margin: 10px;
-    font-size: 30px;
+    margin: 5px;
+    font-size: 44px;
     border: none;
     background: none;
     cursor: pointer;
+    color: rgb(43, 39, 1);
 }
 .promotionalBanner button:hover{
     opacity: 0.5;
@@ -355,6 +362,8 @@ ul.menuNav.open{
     height: auto;
 }
 
+
+
 .boxSideBar{
     text-align: center;
     border: 1px solid black;
@@ -386,6 +395,7 @@ table th,td{
     width: 100%;
     position: relative;
     display: block;
+    cursor: pointer;
 }
 
 .pictureGallery span{
@@ -395,7 +405,7 @@ table th,td{
     background-color: white;
     padding: 1vw 1vw;
     font-size: 3vw;
-    color: #10678c;
+    color: #052d3e;
     opacity: 0.9;
 }
 
@@ -495,8 +505,9 @@ table th,td{
 }
 
 /* Directoy Page */
-#discovery h1{
+#discovery h2{
     text-align: center;
+    font-size: 2rem;
 }
 #discovery article h2{
     display: none;
