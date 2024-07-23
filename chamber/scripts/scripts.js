@@ -125,46 +125,38 @@ function creatingSections(data){
 getLinks(membersUrl);
 
 //SPOTLIGHT CREATION
-function createSpotlights(data){
+function getRandomElements(array, count) {
+  const shuffled = array.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
+
+function createSpotlights(data) {
   const memberSpotlights = document.getElementById("memberSpotlights");
-  if(memberSpotlights){
-    let countDiv = 0
-    const companies = data.companies
-      for (let c = 0; c < companies.length && countDiv < 3; c++){
-        console.log(countDiv)
-        const company = companies[c]
-        let membershipLevel = ""
-        membershipLevel = company.membershipLevel
-        console.log(membershipLevel)
-        if(membershipLevel == "Gold" || membershipLevel == "Silver"){
-          const div = document.createElement("div")
+  if (memberSpotlights) {
+      const companies = data.companies;
+      const eligibleCompanies = companies.filter(company => 
+          company.membershipLevel === "Gold" || company.membershipLevel === "Silver"
+      );
+      const randomCompanies = getRandomElements(eligibleCompanies, 3);
+      memberSpotlights.innerHTML = '';
+      
+      randomCompanies.forEach(company => {
+          const div = document.createElement("div");
           const divContent = `
-                          <img src="${company.image}" alt="${company.name}">
-                          <p>${company.name}</p>
-                          <div class="contact-info">
-                              <div>${company.phone.number}</div>
-                              <a href="${company.website}">Website</a>
-                          </div>`
-          div.className = "spotlight-box"
-          div.innerHTML = divContent
-          memberSpotlights.appendChild(div)
-          countDiv++
-          
-        }
-      }
+              <img src="${company.image}" alt="${company.name}">
+              <p>${company.name}</p>
+              <div class="contact-info">
+                  <div>${company.phone.number}</div>
+                  <a href="${company.website}">Website</a>
+              </div>`;
+          div.className = "spotlight-box";
+          div.innerHTML = divContent;
+          memberSpotlights.appendChild(div);
+      });
   }
 }
 
-
-
-
-
-
-
-
-
 // Weather Box
-
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=-10.90&lon=-37.02&units=metric&appid=932fce6cea8cb7e687cd724a73adbc12`;
 
 const weatherIcon = document.getElementById("weatherIcon");
