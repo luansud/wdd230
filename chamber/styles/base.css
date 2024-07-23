@@ -186,7 +186,7 @@ ul.menuNav.open{
 }
 .promotionalBanner button:hover{
     opacity: 0.5;
-    transition: 0.8 ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 

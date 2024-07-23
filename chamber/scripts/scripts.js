@@ -170,14 +170,16 @@ async function getWeather(){
     displayWeather(data)
 }
 function displayWeather(data){
-    weatherTemp.textContent = `${Math.round(data.main.temp)}ºC`
-    const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-    const imgIcon = document.createElement('img')
-    imgIcon.setAttribute("src",weatherIconSrc)
-    imgIcon.setAttribute("alt","Weather Icon")  
-    weatherIcon.appendChild(imgIcon)
-    weatherDesc.textContent = data.weather[0].main
-    weatherHum.textContent = `Humidity: ${data.main.humidity}%`
+    if(weatherTemp){
+      weatherTemp.textContent = `${Math.round(data.main.temp)}ºC`
+      const weatherIconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+      const imgIcon = document.createElement('img')
+      imgIcon.setAttribute("src",weatherIconSrc)
+      imgIcon.setAttribute("alt","Weather Icon")  
+      weatherIcon.appendChild(imgIcon)
+      weatherDesc.textContent = data.weather[0].main
+      weatherHum.textContent = `Humidity: ${data.main.humidity}%`
+    }
 }
 getWeather();
 
@@ -193,19 +195,20 @@ async function getForecastWeather(urlForecast){
 
 function displayForecastWeather(data){
   const list = data.list
-
-  for (let i = 7; i <= 23; i += 8) {
-    const div = document.createElement('div')
-    const weatherDate = list[i].dt_txt.split(" ")[0]
-    const [year,month,day] = weatherDate.split("-")
-    const divContent = `<div>
-                            <p>${day}/${month}</p>
-                            <img src="https://openweathermap.org/img/w/${list[i].weather[0].icon}.png" alt="weather Icon">
-                            <h2>${Math.round(list[i].main.temp)}ºC</h2>
-                            <span>${list[i].weather[0].main}</span>
-                        </div>`
-    div.innerHTML = divContent
-    forecastWeatherBox.appendChild(div)
+  if(forecastWeatherBox){
+    for (let i = 7; i <= 23; i += 8) {
+      const div = document.createElement('div')
+      const weatherDate = list[i].dt_txt.split(" ")[0]
+      const [year,month,day] = weatherDate.split("-")
+      const divContent = `<div>
+                              <p>${day}/${month}</p>
+                              <img src="https://openweathermap.org/img/w/${list[i].weather[0].icon}.png" alt="weather Icon">
+                              <h2>${Math.round(list[i].main.temp)}ºC</h2>
+                              <span>${list[i].weather[0].main}</span>
+                          </div>`
+      div.innerHTML = divContent
+      forecastWeatherBox.appendChild(div)
+    }
   }
 }
 
