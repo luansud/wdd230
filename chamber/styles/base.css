@@ -220,7 +220,10 @@ ul.menuNav.open{
     display: block; /* larger receive display flex  space around*/ 
 }
 
-.blockEvent{
+.blockEvent:nth-child(1),
+.blockEvent:nth-child(2),
+.blockEvent:nth-child(3),
+.blockEvent:nth-child(4){
     margin: 10px;
     padding: 30px 20px;
     background: url("../images/natal_iluminado.jpeg");
@@ -230,6 +233,27 @@ ul.menuNav.open{
     color: var(--accent2-color);
     border-radius: 20px;
 }
+.blockEvent:nth-child(1){
+    background: url("../images/barra-bridge.webp");
+    background-size: cover;
+    background-position: center;
+}
+.blockEvent:nth-child(3){
+    background: url("../images//love-barra.webp");
+    background-size: cover;
+    background-position: center;
+}
+.blockEvent:nth-child(4){
+    background: url("../images/barradoscoqueiros.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.overlay{
+    text-align: center;
+}
+
 
 
 .blockEvent button{
